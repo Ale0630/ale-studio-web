@@ -15,7 +15,7 @@ const FadeIn: React.FC<{ children: React.ReactNode; delay?: number }> = ({ child
   );
 };
 
-// 案例数据结构 (您可以随时在这里添加或修改您的真实视频链接)
+// 案例数据结构
 type VideoItem = {
   id: string;
   title: string;
@@ -36,41 +36,43 @@ const PORTFOLIO_DATA: PortfolioCategory[] = [
     id: 'brand-story',
     title: "品牌故事",
     desc: "塑造品牌灵魂，传递核心价值",
-    coverVideo: "/地产概念片.mp4",
+    coverVideo: "https://alestudio.oss-cn-hangzhou.aliyuncs.com/READMD/%E5%9C%B0%E4%BA%A7%E6%A6%82%E5%BF%B5%E7%89%87.mp4",
     videos: [
-      { id: 'b1', title: '华为 × 青岛开业创意', videoUrl: '/华为 × 青岛开业创意.mp4' },
-      { id: 'b2', title: '华为 × 合肥开业创意', videoUrl: '/华为 × 合肥开业创意.mp4' },
-      { id: 'b3', title: '华为 × 潍坊开业创意', videoUrl: '/华为 × 潍坊开业创意.mp4' },
-      { id: 'b4', title: 'KFC品牌概念片', videoUrl: '/KFC品牌概念片.mp4' },
-      { id: 'b5', title: 'SEIN品牌概念片', videoUrl: '/SEIN品牌概念片.mp4' },
-      { id: 'b6', title: '服装品牌概念片', videoUrl: '/服装品牌概念片.mp4' },
-      { id: 'b7', title: '地产概念片', videoUrl: '/地产概念片.mp4' },
+      { id: 'b1', title: '华为 × 青岛开业创意', videoUrl: 'https://alestudio.oss-cn-hangzhou.aliyuncs.com/READMD/%E5%8D%8E%E4%B8%BA%20%C3%97%20%E9%9D%92%E5%B2%9B%E5%BC%80%E4%B8%9A%E5%88%9B%E6%84%8F.mp4' },
+      { id: 'b2', title: '华为 × 合肥开业创意', videoUrl: 'https://alestudio.oss-cn-hangzhou.aliyuncs.com/READMD/%E5%8D%8E%E4%B8%BA%20%C3%97%20%E5%90%88%E8%82%A5%E5%BC%80%E4%B8%9A%E5%88%9B%E6%84%8F.mp4' },
+      { id: 'b3', title: '华为 × 潍坊开业创意', videoUrl: 'https://alestudio.oss-cn-hangzhou.aliyuncs.com/READMD/%E5%8D%8E%E4%B8%BA%20%C3%97%20%E6%BD%8D%E5%9D%8A%E5%BC%80%E4%B8%9A%E5%88%9B%E6%84%8F.mp4' },
+      { id: 'b4', title: 'KFC品牌概念片', videoUrl: 'https://alestudio.oss-cn-hangzhou.aliyuncs.com/READMD/KFC%E5%93%81%E7%89%8C%E6%A6%82%E5%BF%B5%E7%89%87.mp4' },
+      { id: 'b5', title: 'SEIN品牌概念片', videoUrl: 'https://alestudio.oss-cn-hangzhou.aliyuncs.com/READMD/SEIN%E5%93%81%E7%89%8C%E6%A6%82%E5%BF%B5%E7%89%87.mp4' },
+      { id: 'b6', title: '可口可乐产品概念片', videoUrl: 'https://alestudio.oss-cn-hangzhou.aliyuncs.com/READMD/%E5%8F%AF%E5%8F%A3%E5%8F%AF%E4%B9%90%E4%BA%A7%E5%93%81%E6%A6%82%E5%BF%B5%E7%89%87.mp4' },
+      { id: 'b7', title: '地产概念片', videoUrl: 'https://alestudio.oss-cn-hangzhou.aliyuncs.com/READMD/%E5%9C%B0%E4%BA%A7%E6%A6%82%E5%BF%B5%E7%89%87.mp4' },
     ]
   },
   {
     id: 'product-showcase',
     title: "产品展示",
     desc: "概念化呈现，突出产品特性",
-    coverVideo: "/赫莲娜美妆产品概念片.mp4",
+    coverVideo: "https://alestudio.oss-cn-hangzhou.aliyuncs.com/READMD/%E8%B5%AB%E8%8E%B2%E5%A8%9C%E7%BE%8E%E5%A6%86%E4%BA%A7%E5%93%81%E6%A6%82%E5%BF%B5%E7%89%87.mp4",
     videos: [
-      { id: 'p1', title: '赫莲娜美妆产品概念片', videoUrl: '/赫莲娜美妆产品概念片.mp4' },
-      { id: 'p2', title: 'ARMANI美妆产品概念片', videoUrl: '/ARMANI美妆产品概念片.mp4' },
-      { id: 'p3', title: 'GUERLAIN美妆产品概念片', videoUrl: '/GUERLAIN美妆产品概念片.mp4' },
-      { id: 'p4', title: '韩束产品概念片', videoUrl: '/韩束产品概念片.mp4' },
-      { id: 'p6', title: 'AMX安慕希', videoUrl: '/AMX安慕希.mp4' },
-      { id: 'p7', title: '2026新春季', videoUrl: '/2026新春季.mp4' },
+      { id: 'p1', title: '赫莲娜美妆产品概念片', videoUrl: 'https://alestudio.oss-cn-hangzhou.aliyuncs.com/READMD/%E8%B5%AB%E8%8E%B2%E5%A8%9C%E7%BE%8E%E5%A6%86%E4%BA%A7%E5%93%81%E6%A6%82%E5%BF%B5%E7%89%87.mp4' },
+      { id: 'p2', title: 'ARMANI美妆产品概念片', videoUrl: 'https://alestudio.oss-cn-hangzhou.aliyuncs.com/READMD/ARMANI%E7%BE%8E%E5%A6%86%E4%BA%A7%E5%93%81%E6%A6%82%E5%BF%B5%E7%89%87.mp4' },
+      { id: 'p3', title: 'GUERLAIN美妆产品概念片', videoUrl: 'https://alestudio.oss-cn-hangzhou.aliyuncs.com/READMD/GUERLAIN%E7%BE%8E%E5%A6%86%E4%BA%A7%E5%93%81%E6%A6%82%E5%BF%B5%E7%89%87.mp4' },
+      { id: 'p4', title: '韩束产品概念片', videoUrl: 'https://alestudio.oss-cn-hangzhou.aliyuncs.com/READMD/%E9%9F%A9%E6%9D%9F%E4%BA%A7%E5%93%81%E6%A6%82%E5%BF%B5%E7%89%87.mp4' },
+      { id: 'p5', title: 'KANS韩束产品概念片', videoUrl: 'https://alestudio.oss-cn-hangzhou.aliyuncs.com/READMD/KANS%E9%9F%A9%E6%9D%9F%E4%BA%A7%E5%93%81%E6%A6%82%E5%BF%B5%E7%89%87.mp4' },
+      { id: 'p6', title: 'AMX安慕希', videoUrl: 'https://alestudio.oss-cn-hangzhou.aliyuncs.com/READMD/AMX%E5%AE%89%E6%85%95%E5%B8%8C.mp4' },
+      { id: 'p7', title: '2026新春季', videoUrl: 'https://alestudio.oss-cn-hangzhou.aliyuncs.com/READMD/2026%E6%96%B0%E6%98%A5%E5%AD%A3.mp4' },
+      { id: 'p8', title: '新颜开局，请站C位', videoUrl: 'https://alestudio.oss-cn-hangzhou.aliyuncs.com/READMD/%E6%96%B0%E9%A2%9C%E5%BC%80%E5%B1%80%EF%BC%8C%E8%AF%B7%E7%AB%99C%E4%BD%8D.mp4' },
     ]
   },
   {
     id: 'city-promo',
     title: "城市宣传片",
     desc: "展现城市魅力，打造文旅名片",
-    coverVideo: "/中国·青岛城市概念片.mp4",
+    coverVideo: "https://alestudio.oss-cn-hangzhou.aliyuncs.com/READMD/%E4%B8%AD%E5%9B%BD%C2%B7%E9%9D%92%E5%B2%9B%E5%9F%8E%E5%B8%82%E6%A6%82%E5%BF%B5%E7%89%87.mp4",
     videos: [
       { id: 'c1', title: '中国·北京新年宣传片', bilibiliId: 'BV1WDAfzPE8k' },
       { id: 'c2', title: '中国·济南城市概念片', bilibiliId: 'BV1sDAfzPEp7' },
       { id: 'c3', title: '中国·聊城新春概念片', bilibiliId: 'BV1sDAfzPEsJ' },
-      { id: 'c4', title: '中国·青岛城市概念片', bilibiliId: 'BV1x1AfzqE6x' },
+      { id: 'c4', title: '中国·青岛城市概念片', videoUrl: 'https://alestudio.oss-cn-hangzhou.aliyuncs.com/READMD/%E4%B8%AD%E5%9B%BD%C2%B7%E9%9D%92%E5%B2%9B%E5%9F%8E%E5%B8%82%E6%A6%82%E5%BF%B5%E7%89%87.mp4' },
     ]
   }
 ];
@@ -272,7 +274,6 @@ export default function App() {
                           alt="华为青岛生活馆情绪板" 
                           className="w-full h-full object-cover object-top hover:object-bottom opacity-80 group-hover:opacity-100 transition-all duration-[8s] ease-in-out"
                           onError={(e) => {
-                            // Fallback if the user hasn't uploaded the image yet
                             e.currentTarget.src = "https://picsum.photos/seed/moodboard/800/800?blur=2";
                           }}
                         />
@@ -334,7 +335,7 @@ export default function App() {
                     <video 
                       src={item.coverVideo} 
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-100"
-                      autoPlay loop muted playsInline
+                      autoPlay loop muted playsInline webkit-playsinline="true"
                     />
                     <div className="absolute inset-0 flex items-center justify-center pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                       <div className="w-12 h-12 rounded-full bg-black/50 backdrop-blur-md flex items-center justify-center border border-white/20 scale-90 group-hover:scale-100 transition-transform duration-500">
@@ -407,7 +408,6 @@ export default function App() {
                       const formData = new FormData(form);
                       
                       try {
-                        // 使用真实的 Formspree ID
                         const response = await fetch('https://formspree.io/f/mjgenegl', {
                           method: 'POST',
                           body: formData,
@@ -588,6 +588,7 @@ export default function App() {
                           className="w-full h-full object-cover"
                           controls
                           playsInline
+                          webkit-playsinline="true"
                           preload="metadata"
                         />
                       )}
